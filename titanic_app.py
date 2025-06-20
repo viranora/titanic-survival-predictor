@@ -22,7 +22,12 @@ st.markdown("""
             color: #000000 !important;
             background-color: #f0f4f8;
         }
-        label, .stTextInput label, .stSelectbox label, .stSlider label, .stNumberInput label {
+     
+        label, div[data-baseweb="select"], .stSlider label, .stNumberInput label {
+            color: #000000 !important;
+        }
+
+        .stSlider div, .stNumberInput div, .stSelectbox div, span, p {
             color: #000000 !important;
         }
         .stButton>button {
@@ -35,6 +40,7 @@ st.markdown("""
         }
     </style>
 """, unsafe_allow_html=True)
+
 
 
 # --- HEADER ---
