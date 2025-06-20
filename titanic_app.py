@@ -15,7 +15,6 @@ st.set_page_config(page_title="Titanic Survival Predictor", page_icon="🚢", la
 # --- STYLING ---
 st.markdown("""
     <style>
-        /* Arka plan */
         .stApp {
             background-color: #f0f4f8;
         }
@@ -25,12 +24,11 @@ st.markdown("""
             color: #000000 !important;
         }
 
-        /* Başlıklar */
+     
         h1, h2, h3, h4, h5, h6 {
             color: #000000 !important;
         }
 
-        /* Label ve input başlıkları */
         label, 
         .stTextInput > label,
         .stSelectbox > label,
@@ -40,31 +38,34 @@ st.markdown("""
             color: #000000 !important;
         }
 
-        /* Slider, number input, selectbox iç yazılar */
         .stSlider div, 
         .stNumberInput div,
-        .stSelectbox div,
         span, 
         p {
             color: #000000 !important;
         }
 
-        /* Checkbox ve diğer label'lar */
+        .stSelectbox div[data-baseweb="select"] *,
+        .css-1wa3eu0-placeholder, 
+        .css-1uccc91-singleValue {
+            color: #ffffff !important;
+        }
+
         .css-1y0tads, .css-1cpxqw2, .css-1p05t8e, .css-1kyxreq {
             color: #000000 !important;
         }
 
-        /* Butonlar */
         .stButton>button {
-            color: white !important;
-            background-color: #228be6 !important;
-            border: none;
+            color: #000000 !important;
+            background-color: #ffffff !important;
+            border: 2px solid #000000;
             padding: 10px 20px;
             border-radius: 8px;
             font-weight: bold;
         }
     </style>
 """, unsafe_allow_html=True)
+
 
 
 
