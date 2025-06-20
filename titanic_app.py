@@ -24,7 +24,6 @@ st.markdown("""
             color: #000000 !important;
         }
 
-     
         h1, h2, h3, h4, h5, h6 {
             color: #000000 !important;
         }
@@ -41,18 +40,23 @@ st.markdown("""
         .stSlider div, 
         .stNumberInput div,
         span, 
-        p {
+        p,
+        .css-1y0tads, .css-1cpxqw2, .css-1p05t8e, .css-1kyxreq {
             color: #000000 !important;
         }
 
         .stSelectbox div[data-baseweb="select"] *,
         .css-1wa3eu0-placeholder, 
         .css-1uccc91-singleValue {
-            color: #ffffff !important;
+            color: #000000 !important;
         }
 
-        .css-1y0tads, .css-1cpxqw2, .css-1p05t8e, .css-1kyxreq {
-            color: #000000 !important;
+        @media only screen and (max-width: 768px) {
+            .stSelectbox div[data-baseweb="select"] *,
+            .css-1wa3eu0-placeholder, 
+            .css-1uccc91-singleValue {
+                color: #ffffff !important;
+            }
         }
 
         .stButton>button {
@@ -65,9 +69,6 @@ st.markdown("""
         }
     </style>
 """, unsafe_allow_html=True)
-
-
-
 
 
 
