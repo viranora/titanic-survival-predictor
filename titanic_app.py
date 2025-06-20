@@ -18,12 +18,12 @@ st.markdown("""
         .stApp {
             background-color: #f0f4f8;
         }
-        .block-container {
-            padding-top: 2rem;
-            padding-bottom: 2rem;
+        html, body, [class^="css"] {
+            color: #000000 !important;
+            background-color: #f0f4f8;
         }
-        .stMarkdown, .stText, .stTitle, .stCaption, label, .stSubheader {
-            color: #000000; /* Metin rengini siyah yap */
+        label, .stTextInput label, .stSelectbox label, .stSlider label, .stNumberInput label {
+            color: #000000 !important;
         }
         .stButton>button {
             color: white;
