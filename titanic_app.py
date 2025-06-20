@@ -15,41 +15,49 @@ st.set_page_config(page_title="Titanic Survival Predictor", page_icon="🚢", la
 # --- STYLING ---
 st.markdown("""
     <style>
+        /* Arka plan */
         .stApp {
             background-color: #f0f4f8;
         }
 
-        html, body {
-            color: #000000 !important;
-            background-color: #f0f4f8;
-        }
-
-       
-        label, 
-        .stSlider > div > div > div, 
-        .stNumberInput > label, 
-        .stSelectbox > label, 
-        .stTextInput > label,
-        .stMultiSelect > label {
+        html, body, [class^="css"] {
+            background-color: #f0f4f8 !important;
             color: #000000 !important;
         }
 
-
-        .css-1y0tads, .css-1cpxqw2, .css-1p05t8e, .css-1kyxreq {
-            color: #000000 !important;
-        }
-
-        .stSlider span, .stSlider label, .stSlider div {
-            color: #000000 !important;
-        }
-
+        /* Başlıklar */
         h1, h2, h3, h4, h5, h6 {
             color: #000000 !important;
         }
 
+        /* Label ve input başlıkları */
+        label, 
+        .stTextInput > label,
+        .stSelectbox > label,
+        .stSlider > label,
+        .stNumberInput > label,
+        div[data-baseweb="select"] {
+            color: #000000 !important;
+        }
+
+        /* Slider, number input, selectbox iç yazılar */
+        .stSlider div, 
+        .stNumberInput div,
+        .stSelectbox div,
+        span, 
+        p {
+            color: #000000 !important;
+        }
+
+        /* Checkbox ve diğer label'lar */
+        .css-1y0tads, .css-1cpxqw2, .css-1p05t8e, .css-1kyxreq {
+            color: #000000 !important;
+        }
+
+        /* Butonlar */
         .stButton>button {
-            color: white;
-            background-color: #228be6;
+            color: white !important;
+            background-color: #228be6 !important;
             border: none;
             padding: 10px 20px;
             border-radius: 8px;
@@ -57,6 +65,7 @@ st.markdown("""
         }
     </style>
 """, unsafe_allow_html=True)
+
 
 
 
