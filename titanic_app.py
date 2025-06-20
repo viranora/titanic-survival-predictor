@@ -18,18 +18,35 @@ st.markdown("""
         .stApp {
             background-color: #f0f4f8;
         }
-        html, body, [class^="css"] {
+
+        html, body {
             color: #000000 !important;
             background-color: #f0f4f8;
         }
-     
-        label, div[data-baseweb="select"], .stSlider label, .stNumberInput label {
+
+       
+        label, 
+        .stSlider > div > div > div, 
+        .stNumberInput > label, 
+        .stSelectbox > label, 
+        .stTextInput > label,
+        .stMultiSelect > label {
             color: #000000 !important;
         }
 
-        .stSlider div, .stNumberInput div, .stSelectbox div, span, p {
+
+        .css-1y0tads, .css-1cpxqw2, .css-1p05t8e, .css-1kyxreq {
             color: #000000 !important;
         }
+
+        .stSlider span, .stSlider label, .stSlider div {
+            color: #000000 !important;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            color: #000000 !important;
+        }
+
         .stButton>button {
             color: white;
             background-color: #228be6;
@@ -40,6 +57,7 @@ st.markdown("""
         }
     </style>
 """, unsafe_allow_html=True)
+
 
 
 
