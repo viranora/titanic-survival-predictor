@@ -22,11 +22,8 @@ st.markdown("""
             padding-top: 2rem;
             padding-bottom: 2rem;
         }
-        .css-18e3th9 {
-            background-color: #ffffff;
-            padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+        .stMarkdown, .stText, .stTitle, .stCaption, label, .stSubheader {
+            color: #000000; /* Metin rengini siyah yap */
         }
         .stButton>button {
             color: white;
@@ -38,6 +35,7 @@ st.markdown("""
         }
     </style>
 """, unsafe_allow_html=True)
+
 
 # --- HEADER ---
 st.title("🚢 Titanic Survival Prediction")
