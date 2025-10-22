@@ -12,12 +12,19 @@ This is an interactive machine learning web application built with **Streamlit**
 ## 📦 Project Structure
 
 titanic/
+
 ├── titanic_app.py              # Streamlit application (main Python script)
+
 ├── titanic_best_model.pkl      # Trained machine learning model (Logistic Regression)
+
 ├── scaler.pkl                  # StandardScaler object to scale user input
+
 ├── requirements.txt            # List of Python packages needed to run the app
+
 ├── README.md                   # Project description and usage instructions
+
 └── data/
+
     └── titanic.csv             # Original dataset (optional for deployment)
 
 
@@ -54,4 +61,6 @@ Built by Sema Nur Özyılmaz If you're passionate about ML, NLP, or tech communi
 For a step-by-step explanation of data preprocessing, model tuning, Streamlit interface design, and deployment, check out the full Medium article:
 
 https://medium.com/@ssozylmz/from-csv-to-web-app-building-and-deploying-my-titanic-ml-model-with-streamlit-619e44c4f184
+
+...by Vira
 
